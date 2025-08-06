@@ -1,0 +1,45 @@
+{
+	"name": "node-red-contrib-encryption-utils",
+	"version": "0.0.2",
+	"description": "Node-RED node for @a14313/encryption-utils",
+	"main": "dist/app.js",
+	"license": "MIT",
+	"author": "https://github.com/A14313",
+	"types": "dist/app.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "concurrently -k \"tsup --watch\" \"nodemon dist/app.js\"",
+		"format": "prettier --write \"src/**/*.{ts,js,json}\"",
+		"build": "tsup"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/A14313/node-red-contrib-encryption-utils.git"
+	},
+	"keywords": [
+		"encryption",
+		"utils",
+		"crypto",
+		"secure",
+		"typescript",
+		"node-red encryption"
+	],
+	"bugs": {
+		"url": "https://github.com/A14313/node-red-contrib-encryption-utils/issues"
+	},
+	"homepage": "https://github.com/A14313/node-red-contrib-encryption-utils#readme",
+	"devDependencies": {
+		"@changesets/cli": "^2.29.5",
+		"@types/node": "^24.2.0",
+		"concurrently": "^9.2.0",
+		"prettier": "^3.6.2",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
+	},
+	"dependencies": {
+		"@a14313/encryption-utils": "^1.2.3"
+	}
+}
